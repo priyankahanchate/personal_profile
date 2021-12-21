@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Task List</title>
+</head>
+
+<body>
+    <div>
+        
+                <h2>Tasks</h2>
+                                  
+                  <!-- Button trigger modal -->
+      <button type="button" id="" class="edit btn btn-info btn-sm" data-toggle="modal" data-target="#staticBackdrop">
+        Add New Task
+      </button>
+      </div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Add Task Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <ul class="list-group" id="tasksList">
+                   
+          <li class="list-group-item">
+              <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                  Task Name: <input type="text" value=""> <BR><BR>
+               </div>   
+                    <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                           Task Description: <textarea></textarea><BR><BR>
+                    </div>
+                    <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                            Assigned To: <input type="text" value=""><BR><BR>
+                    </div>
+                    <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+
+                    Due Date: <input type="date">  
+                  </div>
+                  <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+
+                   Status: 
+                   <Select id="status" name="status">
+                    <option value="Done">Done</option>
+                    <option value="InProgress">In Progress</option>
+                    <option value="ToDo">To Do</option>
+                    <option value="Review">Review</option>
+                    </Select>
+                  </div>
+              </div>
+              
+              <p>
+                <p><button class="edit btn btn-info btn-sm" name="edit">Submit</button>
+                  <button class="delete btn btn-info btn-sm" name="delete">Reset</button>
+                  </p>
+                  </p>
+          </li>
+      </ul>
+
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <br/><br/>
+                <ul class="list-group" id="tasksList">
+                   
+                    <li class="list-group-item">
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                            <h5>Create Wireframe</h5>
+                            <span class="badge badge-danger">Done</span>
+                        </div>
+                        <div class="d-flex w-100 mb-3 justify-content-between">
+                            <small>Assigned To: Nitu</small>
+                            <small>Due: 21/12/2021</small>
+                        </div>
+                        <p>Create Wireframe for Generation Project</p>
+                        <p><button class="edit btn btn-info btn-sm" name="edit" data-toggle="modal" data-target="#Task1">EDIT</button>
+                            <button class="delete btn btn-info btn-sm" name="delete">DELETE</button>
+                            </p>
+                    </li>
+                </ul>
+                <ul class="list-group" id="tasksList">
+                   
+                  <li class="list-group-item">
+                      <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                          <h5>Create Index.html</h5>
+                          <span class="badge badge-danger">Done</span>
+                      </div>
+                      <div class="d-flex w-100 mb-3 justify-content-between">
+                          <small>Assigned To: Priyanka</small>
+                          <small>Due: 21/12/2021</small>
+                      </div>
+                      <p>Create index.html for Generation Project</p>
+                      <p><button class="edit btn btn-info btn-sm" name="edit" data-toggle="modal" data-target="#Task2">EDIT</button>
+                          <button class="delete btn btn-info btn-sm" name="delete">DELETE</button>
+                          </p>
+                  </li>
+              </ul>
+              <ul class="list-group" id="tasksList">
+                   
+                <li class="list-group-item">
+                    <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                        <h5>Create linking for modal</h5>
+                        <span class="badge badge-danger">Done</span>
+                    </div>
+                    <div class="d-flex w-100 mb-3 justify-content-between">
+                        <small>Assigned To: Gayathri</small>
+                        <small>Due: 21/12/2021</small>
+                    </div>
+                    <p>Create linking for modal for Generation Project</p>
+                    <p><button class="edit btn btn-info btn-sm" name="edit" data-toggle="modal" data-target="#Task3">EDIT</button>
+                        <button class="delete btn btn-info btn-sm" name="delete">DELETE</button>
+                        </p>
+                </li>
+            </ul>
+            <ul class="list-group" id="tasksList">
+                   
+              <li class="list-group-item">
+                  <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                      <h5>Create Stylesheet</h5>
+                      <span class="badge badge-danger">Done</span>
+                  </div>
+                  <div class="d-flex w-100 mb-3 justify-content-between">
+                      <small>Assigned To: Gayathri</small>
+                      <small>Due: 21/12/2021</small>
+                  </div>
+                  <p>Create Stylesheet for Generation Project</p>
+                  <p><button class="edit btn btn-info btn-sm" name="edit" data-toggle="modal" data-target="#Task4">EDIT</button>
+                      <button class="delete btn btn-info btn-sm" name="delete">DELETE</button>
+                      </p>
+              </li>
+          </ul>
+
+          <ul class="list-group" id="tasksList">
+                   
+            <li class="list-group-item">
+                <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                    <h5>Merging to master</h5>
+                    <span class="badge badge-danger">Done</span>
+                </div>
+                <div class="d-flex w-100 mb-3 justify-content-between">
+                    <small>Assigned To: Nitu</small>
+                    <small>Due: 21/12/2021</small>
+                </div>
+                <p>Merging to master for Generation Project</p>
+                <p><button class="edit btn btn-info btn-sm" name="edit" data-toggle="modal" data-target="#Task5">EDIT</button>
+                    <button class="delete btn btn-info btn-sm" name="delete">DELETE</button>
+                    </p>
+            </li>
+        </ul>
+
+        <ul class="list-group" id="tasksList">
+                   
+          <li class="list-group-item">
+              <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                  <h5>Presentation</h5>
+                  <span class="badge badge-danger">Done</span>
+              </div>
+              <div class="d-flex w-100 mb-3 justify-content-between">
+                  <small>Assigned To: Priyanka</small>
+                  <small>Due: 21/12/2021</small>
+              </div>
+              <p>Presenting the Generation Project</p>
+              <p><button class="edit btn btn-info btn-sm" name="edit" data-toggle="modal" data-target="#Task6">EDIT</button>
+                  <button class="delete btn btn-info btn-sm" name="delete">DELETE</button>
+                  </p>
+          </li>
+      </ul>
+
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Task1" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Add Task Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+            <ul class="list-group" id="tasksList">
+                       
+              <li class="list-group-item">
+                  <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                      Task Name: <input type="text" value="Create Wireframe"> <BR><BR>
+                   </div>   
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                               Task Description: <textarea>Create Wireframe for Generation Project"></textarea><BR><BR>
+                        </div>
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                                Assigned To: <input type="text" value="Nitu"><BR><BR>
+                        </div>
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+    
+                        Due Date: <input type="date">  
+                      </div>
+                      <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+    
+                       Status: 
+                       <Select id="status" name="status">
+                        <option value="Done">Done</option>
+                        <option value="InProgress">In Progress</option>
+                        <option value="ToDo">To Do</option>
+                        <option value="Review">Review</option>
+                        </Select>
+                      </div>
+                  </div>
+                  
+                  <p>
+                    <p><button class="edit btn btn-info btn-sm" name="edit">Submit</button>
+                      <button class="delete btn btn-info btn-sm" name="delete">Reset</button>
+                      </p>
+                      </p>
+              </li>
+          </ul>
+    
+    
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="Task2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Add Task Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+            <ul class="list-group" id="tasksList">
+                       
+              <li class="list-group-item">
+                  <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                      Task Name: <input type="text" value="Create Index.html"> <BR><BR>
+                   </div>   
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                               Task Description: <textarea>Create index.html for Generation Project</textarea><BR><BR>
+                        </div>
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                                Assigned To: <input type="text" value="Priyanka"><BR><BR>
+                        </div>
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+    
+                        Due Date: <input type="date">  
+                      </div>
+                      <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+    
+                       Status: 
+                       <Select id="status" name="status">
+                        <option value="Done">Done</option>
+                        <option value="InProgress">In Progress</option>
+                        <option value="ToDo">To Do</option>
+                        <option value="Review">Review</option>
+                        </Select>
+                      </div>
+                  </div>
+                  
+                  <p>
+                    <p><button class="edit btn btn-info btn-sm" name="edit">Submit</button>
+                      <button class="delete btn btn-info btn-sm" name="delete">Reset</button>
+                      </p>
+                      </p>
+              </li>
+          </ul>
+    
+    
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="Task3" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Add Task Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+            <ul class="list-group" id="tasksList">
+                       
+              <li class="list-group-item">
+                  <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                      Task Name: <input type="text" value="Create linking for modal"> <BR><BR>
+                   </div>   
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                               Task Description: <textarea>Create linking for modal for Generation Project</textarea><BR><BR>
+                        </div>
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                                Assigned To: <input type="text" value="Gayathri"><BR><BR>
+                        </div>
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+    
+                        Due Date: <input type="date">  
+                      </div>
+                      <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+    
+                       Status: 
+                       <Select id="status" name="status">
+                        <option value="Done">Done</option>
+                        <option value="InProgress">In Progress</option>
+                        <option value="ToDo">To Do</option>
+                        <option value="Review">Review</option>
+                        </Select>
+                      </div>
+                  </div>
+                  
+                  <p>
+                    <p><button class="edit btn btn-info btn-sm" name="edit">Submit</button>
+                      <button class="delete btn btn-info btn-sm" name="delete">Reset</button>
+                      </p>
+                      </p>
+              </li>
+          </ul>
+    
+    
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="modal fade" id="Task4" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Add Task Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+            <ul class="list-group" id="tasksList">
+                       
+              <li class="list-group-item">
+                  <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                      Task Name: <input type="text" value="Create Stylesheet"> <BR><BR>
+                   </div>   
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                               Task Description: <textarea >Create Stylesheet for Generation Project</textarea></textarea>><BR><BR>
+                        </div>
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                                Assigned To: <input type="text" value="Gayathri"><BR><BR>
+                        </div>
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+    
+                        Due Date: <input type="date">  
+                      </div>
+                      <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+    
+                       Status: 
+                       <Select id="status" name="status">
+                        <option value="Done">Done</option>
+                        <option value="InProgress">In Progress</option>
+                        <option value="ToDo">To Do</option>
+                        <option value="Review">Review</option>
+                        </Select>
+                      </div>
+                  </div>
+                  
+                  <p>
+                    <p><button class="edit btn btn-info btn-sm" name="edit">Submit</button>
+                      <button class="delete btn btn-info btn-sm" name="delete">Reset</button>
+                      </p>
+                      </p>
+              </li>
+          </ul>
+    
+    
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="Task5" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Add Task Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+            <ul class="list-group" id="tasksList">
+                       
+              <li class="list-group-item">
+                  <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                      Task Name: <input type="text" value="Merging to master"> <BR><BR>
+                   </div>   
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                               Task Description: <textarea >Merging to master for Generation Project</textarea></textarea>><BR><BR>
+                        </div>
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                                Assigned To: <input type="text" value="Nitu"><BR><BR>
+                        </div>
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+    
+                        Due Date: <input type="date">  
+                      </div>
+                      <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+    
+                       Status: 
+                       <Select id="status" name="status">
+                        <option value="Done">Done</option>
+                        <option value="InProgress">In Progress</option>
+                        <option value="ToDo">To Do</option>
+                        <option value="Review">Review</option>
+                        </Select>
+                      </div>
+                  </div>
+                  
+                  <p>
+                    <p><button class="edit btn btn-info btn-sm" name="edit">Submit</button>
+                      <button class="delete btn btn-info btn-sm" name="delete">Reset</button>
+                      </p>
+                      </p>
+              </li>
+          </ul>
+    
+    
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="Task6" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Add Task Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+            <ul class="list-group" id="tasksList">
+                       
+              <li class="list-group-item">
+                  <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                      Task Name: <input type="text" value="Presentation"> <BR><BR>
+                   </div>   
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                               Task Description: <textarea>Presenting the Generation Project</textarea><BR><BR>
+                        </div>
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+                                Assigned To: <input type="text" value="Priyanka"><BR><BR>
+                        </div>
+                        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+    
+                        Due Date: <input type="date">  
+                      </div>
+                      <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
+    
+                       Status: 
+                       <Select id="status" name="status">
+                        <option value="Done">Done</option>
+                        <option value="InProgress">In Progress</option>
+                        <option value="ToDo">To Do</option>
+                        <option value="Review">Review</option>
+                        </Select>
+                      </div>
+                  </div>
+                  
+                  <p>
+                    <p><button class="edit btn btn-info btn-sm" name="edit">Submit</button>
+                      <button class="delete btn btn-info btn-sm" name="delete">Reset</button>
+                      </p>
+                      </p>
+              </li>
+          </ul>
+    
+    
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
