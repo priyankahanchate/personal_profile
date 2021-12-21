@@ -1,0 +1,26 @@
+h1 {
+    
+    color: blue;
+    text-align: center;
+}
+
+body{
+
+    text-align: center;
+    
+    color: blue;
+    background-image: ;
+
+    
+
+}
+
+html{
+
+    background-image:url(photo-backgroundtaskform.jpg);
+    background-size:cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
